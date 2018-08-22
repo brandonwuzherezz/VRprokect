@@ -12,7 +12,7 @@ public class Flying : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		while (flying == true) {
+		if (flying == true) {
 			transform.position = transform.position + Camera.main.transform.forward * 5f * Time.deltaTime;
 		}
 		///
